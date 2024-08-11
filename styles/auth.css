@@ -1,0 +1,169 @@
+.background {
+  display: flex;
+  /* padding: 100px; */
+  /* position: absolute; */
+  top: 0px;
+  left: 0px;
+  /* width: calc(100vw - 200px);
+  height: calc(100vh - 200px); */
+  /* background: linear-gradient(150deg, #d9dbe2, #808aac 100%, #282d39 0); */
+  background-image: url('../assets/Gemini_Generated_Image_wkr5k3wkr5k3wkr5.jpeg');
+}
+
+.description{
+  padding-top: 10vh;
+  flex: 2;
+  height: 100vh;
+  background-color: #4a5162;
+  opacity: 0.9;
+}
+
+.description-content{
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  width: 60%;
+  margin-left: 10%;
+  color: white;
+}
+
+h1{
+  font-size: 50px;
+  color: #8685a9;
+  opacity: 0.6;
+}
+
+p{
+  margin-top: 40px;
+  font-size: 25px;
+}
+
+.auth-container {
+  flex: 1;
+  position: relative;
+  padding-top:50px;
+  background-color: #4a5162;
+  opacity: 0.9;
+  /* box-shadow: 0 2px 15px rgb(0 0 0 / 68%); */
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.auth-form {
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+  padding-top: 33px;
+  width: 60%;
+  /* margin-left: 20%; */
+}
+
+.auth-title {
+  padding-bottom: 70px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+
+.text-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 50px;
+  background-color: #4a5162;
+  outline: none;
+  border-width: 0px;
+  border-bottom: 2px solid #726dfe;
+  color: white;
+}
+
+.text-input::placeholder {
+  color: hsla(0, 0%, 100%, 0.568);
+}
+
+.submit-button {
+  width: 90%;
+  margin-top: 6vh;
+  margin-left: 24px;
+  padding: 14px;
+  border-radius: 4px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: #726dfe;
+  color: white;
+  outline: none;
+}
+
+.submit-button::hover {
+  background-color: #938ffe;
+}
+
+.auth-info{
+  margin-top: 50px;
+
+  color: hsla(0, 0%, 100%, 0.568);
+  text-align: center;
+  font-size: small;
+}
+
+@media screen and (max-width: 1000px) {
+  .auth-form {
+    padding-top: 33px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description{
+    display: none;
+  }
+
+  .auth-container {
+    height: 100vh;
+  }
+
+  .text-input {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .submit-button {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+
+  .auth-title{
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  .mobile-logo {
+    display: block;
+    margin-left: 80px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0px);
+  }
+  
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0px);
+  }
+  
+}
